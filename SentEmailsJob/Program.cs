@@ -10,19 +10,6 @@ namespace SentEmailsJob
     {
         static void Main(string[] args)
         {
-            //EmailControl emailControl = new EmailControl()
-            //{
-            //    ProcessDate = DateTime.Now,
-            //    CustomerId = 1,
-            //    Address = "",
-            //    NumberOfTransactionsSent = 0,
-            //    Subject = ""
-            //};
-
-            //CustomerPersistence customerPersistence = new CustomerPersistence();
-            //TransactionPersistence transactionPersistence = new TransactionPersistence();
-            //EmailControlPersistence emailControlPersistence = new EmailControlPersistence();
-            //emailControlPersistence.InsertEmailControl(emailControl);
             Execute();
         }
 
