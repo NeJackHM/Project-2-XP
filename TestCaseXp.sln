@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCaseXp.API", "TestCaseXp.API\TestCaseXp.API.csproj", "{8CFAE1AC-3DAD-49DD-9A40-0D16E6AB3E3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCaseXp.API", "TestCaseXp.API\TestCaseXp.API.csproj", "{8CFAE1AC-3DAD-49DD-9A40-0D16E6AB3E3E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestCaseXp", "TestCaseXp", "{637E6584-DD46-422F-965E-B0237EF9BA43}"
 EndProject
@@ -15,11 +15,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9F59AD63-F646-45B6-A900-D1F469422AD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCaseXp.Application", "TestCaseXp.Application\TestCaseXp.Application.csproj", "{6491B968-7607-4AC5-8ADE-FD46362AA026}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCaseXp.Application", "TestCaseXp.Application\TestCaseXp.Application.csproj", "{6491B968-7607-4AC5-8ADE-FD46362AA026}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCaseXp.Domain", "TestCaseXp.Domain\TestCaseXp.Domain.csproj", "{75685ED5-B153-4824-BD6B-5FC61B5777E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCaseXp.Domain", "TestCaseXp.Domain\TestCaseXp.Domain.csproj", "{75685ED5-B153-4824-BD6B-5FC61B5777E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCaseXp.Infrastructure", "TestCaseXp.Infrastructure\TestCaseXp.Infrastructure.csproj", "{A8643352-1CA7-4E06-9FF0-4D3439D01731}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCaseXp.Infrastructure", "TestCaseXp.Infrastructure\TestCaseXp.Infrastructure.csproj", "{A8643352-1CA7-4E06-9FF0-4D3439D01731}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ZConsole", "ZConsole", "{3892335F-4D15-4AE0-BF74-B80023D0B0D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentEmailsJob", "SentEmailsJob\SentEmailsJob.csproj", "{D6761FFA-1F2A-46C0-8C97-3CFCCFE35560}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +47,10 @@ Global
 		{A8643352-1CA7-4E06-9FF0-4D3439D01731}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8643352-1CA7-4E06-9FF0-4D3439D01731}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8643352-1CA7-4E06-9FF0-4D3439D01731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6761FFA-1F2A-46C0-8C97-3CFCCFE35560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6761FFA-1F2A-46C0-8C97-3CFCCFE35560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6761FFA-1F2A-46C0-8C97-3CFCCFE35560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6761FFA-1F2A-46C0-8C97-3CFCCFE35560}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +64,8 @@ Global
 		{6491B968-7607-4AC5-8ADE-FD46362AA026} = {6091C87A-1D32-411C-BD33-980672E267A2}
 		{75685ED5-B153-4824-BD6B-5FC61B5777E7} = {6091C87A-1D32-411C-BD33-980672E267A2}
 		{A8643352-1CA7-4E06-9FF0-4D3439D01731} = {CE35FEE9-AF5E-4634-AF33-79CF8022F5A2}
+		{3892335F-4D15-4AE0-BF74-B80023D0B0D3} = {637E6584-DD46-422F-965E-B0237EF9BA43}
+		{D6761FFA-1F2A-46C0-8C97-3CFCCFE35560} = {3892335F-4D15-4AE0-BF74-B80023D0B0D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E1790AB5-0317-4FA3-8AB6-CE05836BA3D6}
