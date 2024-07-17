@@ -23,7 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCaseXp.Infrastructure",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ZConsole", "ZConsole", "{3892335F-4D15-4AE0-BF74-B80023D0B0D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentEmailsJob", "SentEmailsJob\SentEmailsJob.csproj", "{D6761FFA-1F2A-46C0-8C97-3CFCCFE35560}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SentEmailsJob", "SentEmailsJob\SentEmailsJob.csproj", "{D6761FFA-1F2A-46C0-8C97-3CFCCFE35560}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{C173378F-B482-476A-810B-80F89812D479}"
+	ProjectSection(SolutionItems) = preProject
+		Instalação.txt = Instalação.txt
+		GuiaDeUso.txt = GuiaDeUso.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,6 +72,7 @@ Global
 		{A8643352-1CA7-4E06-9FF0-4D3439D01731} = {CE35FEE9-AF5E-4634-AF33-79CF8022F5A2}
 		{3892335F-4D15-4AE0-BF74-B80023D0B0D3} = {637E6584-DD46-422F-965E-B0237EF9BA43}
 		{D6761FFA-1F2A-46C0-8C97-3CFCCFE35560} = {3892335F-4D15-4AE0-BF74-B80023D0B0D3}
+		{C173378F-B482-476A-810B-80F89812D479} = {637E6584-DD46-422F-965E-B0237EF9BA43}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E1790AB5-0317-4FA3-8AB6-CE05836BA3D6}

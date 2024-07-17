@@ -1,0 +1,6 @@
+O projeto foi feito em duas partes ,um projeto de uma API e um applicativo de console
+a api tem alguns endpoints para cadastrar um cliente e que ele simule compra e venda de 
+produtos financeiros assim como geração de consolidados e relatorios e a o applicativo de console
+executa uma simulação de envio de email para gerar um relatorio em csv com todas as transações
+que vai vencer daqui a 30 dias de todos os clientes, e cadastro de resgitros de controle para
+saber cuantas transações por cliente foram enviadas em cada envio de email.

@@ -1,0 +1,52 @@
+trocar os acessos de banco de dados no arquivo de "appSettings.json" de acordo com os usuarios de maquina local e executar
+a seguinte script
+
+------------------------------------------------------------------------------------------------------------
+create database XpTestCase
+
+use XpTestCase
+
+CREATE TABLE FinancialProduct (
+  Id INT PRIMARY KEY IDENTITY(1,1),
+  Name NVARCHAR(255) NOT NULL,
+  Description NVARCHAR(255),
+  Status NVARCHAR(50) NOT NULL,
+  CreatedAt DATETIME
+);
+
+CREATE TABLE Customer (
+  Id INT PRIMARY KEY IDENTITY(1,1),
+  Name NVARCHAR(255) NOT NULL,
+  CPF NVARCHAR(11) NOT NULL UNIQUE,
+  Email NVARCHAR(255) NOT NULL UNIQUE,
+  Password NVARCHAR(255),
+  CreatedAt DATETIME
+);
+
+CREATE TABLE Transactions(
+  Id INT PRIMARY KEY IDENTITY(1,1),
+  ProductId INT NOT NULL,
+  CustomerId INT NOT NULL,
+  TransactionDate DATETIME,
+  DueDate DATETIME,
+  OperationType NVARCHAR(50),
+  ProductName NVARCHAR(50),
+  UnitPrice DECIMAL(10,2) NOT NULL,
+  Quantity INT NOT NULL,
+  FOREIGN KEY (ProductId) REFERENCES FinancialProduct(Id),
+  FOREIGN KEY (CustomerId) REFERENCES Customer(Id),
+  CreatedAt DATETIME
+);
+
+CREATE TABLE EmailControl(
+  Id INT PRIMARY KEY IDENTITY(1,1),
+  CustomerId INT NOT NULL,
+  NumberOfTransactionsSent INT,
+  Address NVARCHAR(50),
+  Subject NVARCHAR(255),
+  ProcessDate DATETIME,
+  FOREIGN KEY (CustomerId) REFERENCES Customer(Id)
+);
+
+INSERT INTO [dbo].[FinancialProduct]([Name],[Description],[Status],[CreatedAt])VALUES('FII','Fundo inmobiliario','Active',GETDATE());
+INSERT INTO [dbo].[FinancialProduct]([Name],[Description],[Status],[CreatedAt])VALUES('Acao','Açoes','Active',GETDATE());
